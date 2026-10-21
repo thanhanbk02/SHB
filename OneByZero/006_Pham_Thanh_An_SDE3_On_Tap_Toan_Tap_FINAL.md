@@ -75,15 +75,19 @@ Nói câu này, rồi mở file nhìm framework 9 bước (Phần 3.1) và đi t
 > The project with my greatest ownership was a real-time gaming platform.
 > It runs on AWS and serves more than 2 million users.
 > Twenty to twenty-five thousand users are active every day.
+> 
 > My job was the backend architecture and the whole delivery.
+> 
 > We had a problem: API latency was high under load.
 > I did not add more servers first.
 > I profiled the request path. I found the real bottlenecks.
 > Some work was blocking the request, but it was not necessary.
 > Some data was loaded again and again on every request.
+> 
 > So I made two changes.
 > First, I moved non-blocking work to async processing.
 > Second, I added local caching on each node.
+> 
 > After these changes, API response time improved up to three times.
 > The lesson: always measure first. Do not guess.
 
