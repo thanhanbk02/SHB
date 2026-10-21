@@ -55,13 +55,16 @@ Nói câu này, rồi mở file nhìm framework 9 bước (Phần 3.1) và đi t
 > I am a Senior Software Engineer and Solution Architect.
 > I have more than 15 years of experience in backend systems.
 > My strongest skills are: Python, Java, and C#.
+>
 > I have deep experience in distributed systems, AWS, and performance optimization.
 > In my current role, I own the architecture of backend platforms.
 > These platforms serve more than 2 million users.
 > I also lead technical work and mentor engineers.
+>
 > One example: I reduced API response time by three times.
 > I also built a GPU backtesting system. It concurrently processes 100 million trades.
 > And I built a TensorFlow model to predict gold prices.
+>
 > I am interested in OneByZero because it combines engineering, AWS, and AI.
 > I believe I can contribute from day one.
 
