@@ -122,11 +122,9 @@ Nói câu này, rồi mở file nhìm framework 9 bước (Phần 3.1) và đi t
 > After that, I improved monitoring to catch it earlier next time.
 > My incident process is: stabilize first, find root cause with evidence, then prevent recurrence.
 
- In most backend systems, we have monitoring and centralized logging systems. When an incident occurs, the monitoring system sends an alert. We use metrics, logs, and traces to investigate the root cause.
-
- If the incident is urgent, we first apply a workaround to restore the service as quickly as possible. Then, we investigate the root cause and implement a hotfix if necessary.
-
- After the issue is resolved, I write an incident report and share it with the relevant stakeholders. The report includes the impact, root cause, resolution, and preventive actions to avoid similar incidents in the future.
+- In most backend systems, we have monitoring and centralized logging systems. When an incident occurs, the monitoring system sends an alert. We use metrics, logs, and traces to investigate the root cause.
+- If the incident is urgent, we first apply a workaround to restore the service as quickly as possible. Then, we investigate the root cause and implement a hotfix if necessary.
+- After the issue is resolved, I write an incident report and share it with the relevant stakeholders. The report includes the impact, root cause, resolution, and preventive actions to avoid similar incidents in the future.
 
 ## 1.5. Script 5 — Why OneByZero / Why SDE III (30s)
 
