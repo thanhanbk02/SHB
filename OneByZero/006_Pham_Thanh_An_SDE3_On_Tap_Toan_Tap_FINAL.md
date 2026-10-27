@@ -161,7 +161,7 @@ Nói câu này, rồi mở file nhìm framework 9 bước (Phần 3.1) và đi t
 > Fourth, I design for failure. Timeouts, retries, idempotency.
 > Fifth, security and observability.
 > My goal: the simplest architecture that works and can grow.
-> ---
+
 1. Clarify requirements
    - Functional / non-functional
    - Users, traffic, read/write ratio
