@@ -161,6 +161,31 @@ Nói câu này, rồi mở file nhìm framework 9 bước (Phần 3.1) và đi t
 > Fourth, I design for failure. Timeouts, retries, idempotency.
 > Fifth, security and observability.
 > My goal: the simplest architecture that works and can grow.
+> ---
+1. Clarify requirements
+   - Functional / non-functional
+   - Users, traffic, read/write ratio
+   - Latency, availability, consistency, security
+2. Estimate scale
+   - RPS
+   - Data volume
+   - Nêu rõ assumptions
+3. High-level architecture
+   - APIs
+   - Database / data store
+   - Cache
+   - Async processing
+   - Chọn DB dựa trên access pattern
+4. Design for failure
+   - Timeout
+   - Retry
+   - Idempotency
+5. Security & observability
+   - Security
+   - Monitoring / logging / tracing
+   - Mục tiêu: simplest architecture that works and can grow
+Và câu kết:
+My goal: the simplest architecture that works and can grow.
 
 ## 2.2. 🔥 What is your AWS experience?
 
