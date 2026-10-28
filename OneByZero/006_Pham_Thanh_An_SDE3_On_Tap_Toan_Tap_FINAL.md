@@ -260,6 +260,33 @@ My goal: the simplest architecture that works and can grow.
 > I know the failure modes: Redis latency, clock drift, Redis outage.
 > Redis outage means a choice: fail open, or fail closed. Must decide per endpoint.
 > I would also rate limit at the API gateway, plus per-service limits.
+ 
+- I would put the rate limit in a shared store, like Redis, not in memory on each server.
+
+- Each request has a key, for example email:user@gmail.com. Redis increments a counter for that key. The first increment sets a TTL, like 60 seconds. If the counter is over the limit, I return 429.
+
+- Because we have many API servers, Redis is the source of truth, so every instance sees the same count.
+
+- I also add a distributed lock on the same key, so two requests cannot run the same login at the same time. If the lock is busy, I return 423.
+
+The key is important: login by email, other APIs by user id or IP. I do not use only IP, because many users can share one IP.”
+
+Same idea, slower (easier to speak):
+
+1. Many servers share one Redis.
+2. Each user has one key.
+3. Redis counts requests in a time window.
+4. Too many requests → 429.
+5. Distributed lock stops duplicate work.
+6. Choose a good key: email, user id, or IP.
+
+If they ask “why Redis?”
+
+“Because it is fast, it is shared by all servers, and TTL can expire the counter automatically.”
+
+If they ask “what is the downside?”
+
+“Redis INCR plus expire is simple, but not 100% exact under high load. For stricter limits I would use a sliding window or a token bucket in Redis.”
 
 ## 2.9. ⭐ Why are you leaving your current job?
 
