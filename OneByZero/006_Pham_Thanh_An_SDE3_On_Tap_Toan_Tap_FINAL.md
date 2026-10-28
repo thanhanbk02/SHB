@@ -149,16 +149,16 @@ Nói câu này, rồi mở file nhìm framework 9 bước (Phần 3.1) và đi t
 
 ## 2.1. 🔥 How do you approach system design?
 
-> First, I clarify the requirements. Functional and non-functional.
+> - First, I clarify the requirements. Functional and non-functional.
 > I ask about: users, traffic, read/write ratio, latency, availability, consistency, security.
-> Second, I estimate the scale. Requests per second, data volume.
+> - Second, I estimate the scale. Requests per second, data volume.
 > I state my assumptions clearly.
-> Third, I design the high-level architecture.
+> - Third, I design the high-level architecture.
 > APIs, data stores, cache, async processing.
 > I choose the data store based on access patterns.
-> Fourth, I design for failure. Timeouts, retries, idempotency.
-> Fifth, security and observability.
-> My goal: the simplest architecture that works and can grow.
+> - Fourth, I design for failure. Timeouts, retries, idempotency.
+> - Fifth, security and observability.
+> - My goal: the simplest architecture that works and can grow.
 
 1. Clarify requirements
    - Functional / non-functional
